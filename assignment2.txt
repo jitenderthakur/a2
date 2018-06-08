@@ -1,0 +1,91 @@
+QUES1:Take two numbers and add them and print the result.
+ANS:
+public class Sum
+{
+	public static void main(String args[])
+	{
+		int a,b,sum;
+		a=50;
+		b=50;
+		sum=a+b; 
+		System.out.println("result ="+sum);
+	}
+}
+
+
+QUES2:Check if a given year is a leap year or not.
+ANS:
+class Leapyear
+{
+	public static void main(String args[])
+	{
+		int a=2020, result=a%4;
+		if(result==0)
+		{ 
+			System.out.println("Its a leap year");
+		}
+
+		else
+		{
+			System.out.println("Not a leap year");
+		}
+	}
+}
+
+QUES3:Print the pattern mention in a question.
+ANS3:
+class Pattern
+{
+	public static void main(String args[])
+	{
+		for(int i=0; i<5; i++)
+		{
+	
+		for(int k=0;k<=i;k++)
+		{
+			System.out.print("*");
+		}
+		System.out.println( );}
+
+	}
+}
+
+QUES4: To find the largest among three
+ANS4:
+class Largest
+{
+	public static void main(String args[])
+	{
+		int a=10, b=20, c=15;
+			if(a>b && a>c)
+			System.out.println("a is largest");
+			
+			else if(b>a && b>c)
+			System.out.println("b is largest");
+
+			else if(c>a && c>b)
+			System.out.println("c is largest");
+			
+			else
+			System.out.println("no. are equal");	
+	}
+}
+
+QUES5: Find the reverse of a number N.
+
+ANS5:
+ class  Reverse{
+
+    public static void main(String[] args) {
+
+        int num = 1234, reversed = 0;
+
+        while(num != 0) {
+            int digit = num % 10;
+            reversed = reversed * 10 + digit;
+            num=num/10;
+      }
+
+        System.out.println("Reversed Number: " + reversed);
+    }
+}
