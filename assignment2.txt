@@ -1,6 +1,6 @@
 QUES1:Take two numbers and add them and print the result.
 ANS:
-public class Sum
+class Sum
 {
 	public static void main(String args[])
 	{
