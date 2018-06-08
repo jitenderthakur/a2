@@ -45,8 +45,8 @@ class Pattern
 		{
 			System.out.print("*");
 		}
-		System.out.println( );}
-
+			System.out.println( );
+		}
 	}
 }
 
@@ -74,18 +74,67 @@ class Largest
 QUES5: Find the reverse of a number N.
 
 ANS5:
- class  Reverse{
+ class  Reverse
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+	 {
 
-        int num = 1234, reversed = 0;
+	        int num = 1234, reversed = 0;
+	        while(num != 0)
+		 {
+            		int digit = num % 10;
+            		reversed = reversed * 10 + digit;
+            		num=num/10;
+         	 }
 
-        while(num != 0) {
-            int digit = num % 10;
-            reversed = reversed * 10 + digit;
-            num=num/10;
-      }
+     		         System.out.println("Reversed Number: " + reversed);
+    	}
+}
 
-        System.out.println("Reversed Number: " + reversed);
-    }
+QUES6:Check if a number N is a palindrome or not.
+ANS
+class  Palindrome
+{
+
+    public static void main(String[] args)
+	 {
+
+	        int num = 123456, reversed = 0;
+
+	        while(num != 0)
+		 {
+            		int digit = num % 10;
+            		reversed = reversed * 10 + digit;
+            		num=num/10;
+         	 }
+
+       		 if(num==reversed)
+			System.out.println("it is a palindrome");
+		else
+			System.out.println("it is not a palindrome");
+    	}
+}
+
+QUES7: Prime number.
+ANS
+class Prime
+{
+	public static void main(String args[])
+	{
+		int num=3, i=2;
+		boolan flag=false;
+		while(i<=num/2)
+		{
+			if(num%i==0)
+			{
+				flag=true;
+				break;
+			}
+			++i;
+		}
+			if (!flag)
+				System.out.println(num +"is a prime number");
+			else
+				System.out.println(num +"is not a prime number");
 }
